@@ -1,16 +1,16 @@
 /*--------------------------------------------------------------
-ZMPLabs Master Style & Layout sheet
+ZMPLabs Master Style Overrides - Global Control Sheet
 --------------------------------------------------------------*/
 
 :root {
-  --bg-main: #11141c;          /* Premium charcoal-slate base */
-  --bg-cards: #171b26;         /* Lighter elevated panels for content blocks */
-  --text-primary: #ffffff;     /* Pure white headers for maximum legibility */
-  --text-muted: #cbd2dc;       /* Bright light-silver text for easy reading */
+  --bg-main: #11141c;          /* Premium slate background base color */
+  --bg-cards: #171b26;         /* Elevated layout box containers */
+  --text-primary: #ffffff;     /* Pure white headers for total clarity */
+  --text-muted: #cbd2dc;       /* Bright light-silver text for reading */
   --accent-cyan: #0dcaf0;      /* Signature blue highlight accents */
 }
 
-/* Global Application to instantly lift all pages out of pure black */
+/* Global Page Override */
 body {
   background-color: var(--bg-main) !important;
   color: var(--text-muted) !important;
@@ -18,20 +18,39 @@ body {
   line-height: 1.7;
 }
 
-/* Clear Contrast Headers */
-h1, h2, h3, h4, h5, h6 {
+/* Clear Contrast Global Headings */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: var(--text-primary) !important;
   font-weight: 700 !important;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
-/* Navigation Bar Alignment */
+/* Global Navbar Styling Container */
 .navbar-custom {
   background-color: rgba(17, 20, 28, 0.95) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 20px 0 !important;
 }
 
-/* Fixes the background image placeholder to look for .png and right-aligns the graphic */
+/* FIX: Forces top nav bar links to look exactly like the homepage on ALL links */
+.nav-link-custom {
+  color: #aaaaaa !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  padding: 0 15px !important;
+  transition: color 0.2s ease !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
+
+/* Dynamic Active Highlights for current open pages */
+.nav-link-custom:hover, .nav-link-custom.active {
+  color: var(--accent-cyan) !important;
+}
+
+/* Automated Premium Hero Box Setup */
 .hero-section-premium {
   position: relative !important;
   background: linear-gradient(90deg, #11141c 40%, rgba(17, 20, 28, 0.7) 100%), 
@@ -40,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 120px 0 !important;
 }
 
-/* Universal Page Box Layout - Automatically wraps all content into premium high-contrast panels */
+/* Content Panel Structure Design */
 .container.py-5, 
 .product-card-premium, 
 .about-card, 
@@ -48,9 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 .workflow-box, 
 .archive-item,
 .contact-box,
+.partner-card,
 .tier-card {
   background: var(--bg-cards) !important;
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 40px !important;
   margin-top: 25px !important;
   margin-bottom: 25px !important;
@@ -58,18 +78,19 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* Clean Input Fields for Contact & Newsletter Boxes */
+/* FIX: Overrides bootstrap and forces hidden labels to be readable light silver */
+.text-muted, .text-secondary, .text-high-contrast, p, li, .list-group-item {
+  color: var(--text-muted) !important;
+}
+
+/* Clean Input Field Text Overrides */
 .form-control {
   background-color: rgba(0, 0, 0, 0.25) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   color: var(--text-primary) !important;
   padding: 12px 20px !important;
+  border-radius: 4px !important;
 }
 .form-control::placeholder {
   color: rgba(255, 255, 255, 0.35) !important;
-}
-
-/* List Item Realignment */
-.roadmap-list-item, li {
-  color: var(--text-muted) !important;
 }
