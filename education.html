@@ -1,22 +1,79 @@
-<section class="container py-5">
-  <h1>Education Hub</h1>
-  <p class="lead">Learn privacy-first AI safety, zero-metadata workflows, and secure automation.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Hub - ZMPLabs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0b0c10; color: #ffffff; }
+        .navbar-custom { background-color: rgba(11, 12, 16, 0.95); border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 20px 0; }
+        .nav-link-custom { color: #aaaaaa !important; font-size: 0.85rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 0 15px !important; }
+        .nav-link-custom:hover { color: #ffffff !important; }
+        .edu-card { background: #12141c; border-left: 3px solid #0dcaf0; padding: 30px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
 
-  <h2>Zero-Metadata Workflows</h2>
-  <p>Understand how to structure workflows that never leak sensitive data.</p>
+    <!-- GLOBAL NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white fs-4" href="index.html">ZMPLabs</a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom active" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="workflows.html">Workflows</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="newsletter.html">Newsletter</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="sponsors.html">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <h2>AI Safety Basics</h2>
-  <p>Learn foundational concepts for safe AI deployment across teams.</p>
+    <!-- CONTENT ELEMENT STRUCTURE[cite: 4] -->
+    <main class="container py-5 my-4">
+        <div class="text-center mb-5">
+            <h1 class="text-uppercase fw-bold">Education Hub[cite: 4]</h1>
+            <p class="lead text-secondary">Learn privacy-first AI safety, zero-metadata workflows, and secure automation.[cite: 4]</p>
+        </div>
 
-  <h2>Local-First Privacy Tools</h2>
-  <p>Explore tools that operate entirely offline to protect proprietary code.</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="edu-card">
+                    <h3 class="h5 text-white text-uppercase">Zero-Metadata Workflows[cite: 4]</h3>
+                    <p class="text-secondary small mb-0">Understand how to structure workflows that never leak sensitive data.[cite: 4]</p>
+                </div>
+                <div class="edu-card">
+                    <h3 class="h5 text-white text-uppercase">AI Safety Basics[cite: 4]</h3>
+                    <p class="text-secondary small mb-0">Learn foundational concepts for safe AI deployment across teams.[cite: 4]</p>
+                </div>
+                <div class="edu-card">
+                    <h3 class="h5 text-white text-uppercase">Local-First Privacy Tools[cite: 4]</h3>
+                    <p class="text-secondary small mb-0">Explore tools that operate entirely offline to protect proprietary code.[cite: 4]</p>
+                </div>
+            </div>
 
-  <h2>Digital Hygiene</h2>
-  <p>Best practices for maintaining clean, secure systems.</p>
+            <div class="col-lg-6">
+                <div class="edu-card">
+                    <h3 class="h5 text-white text-uppercase">Digital Hygiene[cite: 4]</h3>
+                    <p class="text-secondary small mb-0">Best practices for maintaining clean, secure systems.[cite: 4]</p>
+                </div>
+                <div class="edu-card">
+                    <h3 class="h5 text-white text-uppercase">Secure Prompting[cite: 4]</h3>
+                    <p class="text-secondary small mb-0">How to craft prompts that avoid metadata leakage and reduce risk.[cite: 4]</p>
+                </div>
+                <div class="edu-card border-info bg-info bg-opacity-10 text-center">
+                    <h3 class="h5 text-info text-uppercase">Guides & Playbooks[cite: 4]</h3>
+                    <p class="text-white small mb-0">Available exclusively to Advocates and Champions.[cite: 4]</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <h2>Secure Prompting</h2>
-  <p>How to craft prompts that avoid metadata leakage and reduce risk.</p>
-
-  <h2>Guides & Playbooks</h2>
-  <p>Available to Advocates and Champions.</p>
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
