@@ -1,48 +1,47 @@
 /*--------------------------------------------------------------
-ZMPLabs Premium Universal Layout Sheet Overrides
+ZMPLabs Master Style & Layout sheet
 --------------------------------------------------------------*/
 
 :root {
-  /* Shifts the site away from pitch-black to a luxurious, high-contrast matte tech theme */
-  --bg-main: #161922;          /* Clean, deep charcoal-slate base */
-  --bg-cards: #1f2432;         /* Lighter structural panels for text blocks */
-  --text-primary: #ffffff;     /* High-legibility pure white headers */
-  --text-muted: #d1d7e0;       /* Crisp, readable light gray for paragraphs */
-  --accent-cyan: #0dcaf0;      /* Eye-catching highlight color */
+  --bg-main: #11141c;          /* Premium charcoal-slate base */
+  --bg-cards: #171b26;         /* Lighter elevated panels for content blocks */
+  --text-primary: #ffffff;     /* Pure white headers for maximum legibility */
+  --text-muted: #cbd2dc;       /* Bright light-silver text for easy reading */
+  --accent-cyan: #0dcaf0;      /* Signature blue highlight accents */
 }
 
-/* Global Page Lift */
+/* Global Application to instantly lift all pages out of pure black */
 body {
   background-color: var(--bg-main) !important;
   color: var(--text-muted) !important;
   font-family: 'Inter', sans-serif !important;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
-/* Forces all major page headings to jump off the screen */
+/* Clear Contrast Headers */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary) !important;
   font-weight: 700 !important;
-  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
-/* Global Navigation Contrast Adjustments */
+/* Navigation Bar Alignment */
 .navbar-custom {
-  background-color: rgba(22, 25, 34, 0.95) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: rgba(17, 20, 28, 0.95) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
 }
 
-/* Premium Dynamic Hero Section with Automatic Image Backing */
+/* Fixes the background image placeholder to look for .png and right-aligns the graphic */
 .hero-section-premium {
   position: relative !important;
-  background: linear-gradient(180deg, rgba(22, 25, 34, 0.4) 0%, var(--bg-main) 100%), 
-              url('images/hero-bg.jpg') no-repeat center center !important;
+  background: linear-gradient(90deg, #11141c 40%, rgba(17, 20, 28, 0.7) 100%), 
+              url('images/hero-bg.png') no-repeat right center !important;
   background-size: cover !important;
-  background-attachment: scroll;
-  padding: 100px 0 !important;
+  padding: 120px 0 !important;
 }
 
-/* Transparent Background Content Cards to eliminate text monotony */
+/* Universal Page Box Layout - Automatically wraps all content into premium high-contrast panels */
+.container.py-5, 
 .product-card-premium, 
 .about-card, 
 .edu-card, 
@@ -51,44 +50,26 @@ h1, h2, h3, h4, h5, h6 {
 .contact-box,
 .tier-card {
   background: var(--bg-cards) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  padding: 35px !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  padding: 40px !important;
+  margin-top: 25px !important;
   margin-bottom: 25px !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
-  border-radius: 4px !important;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  border-radius: 6px !important;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* Adds a crisp reactive hover glow to cards when moused over */
-.product-card-premium:hover, 
-.about-card:hover, 
-.edu-card:hover, 
-.workflow-box:hover,
-.tier-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(13, 202, 240, 0.4) !important;
-}
-
-/* Ensures form entries on Contact and Newsletters are completely legible */
+/* Clean Input Fields for Contact & Newsletter Boxes */
 .form-control {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   color: var(--text-primary) !important;
-  border-radius: 4px !important;
+  padding: 12px 20px !important;
 }
 .form-control::placeholder {
-  color: rgba(255, 255, 255, 0.4) !important;
+  color: rgba(255, 255, 255, 0.35) !important;
 }
 
-/* Roadmap List Items Realignment */
-.roadmap-list-item {
-  background: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
-  margin-bottom: 8px;
-  border-radius: 4px !important;
-}
-
-/* Global Paragraph High Contrast Rule override */
-p, .text-high-contrast {
+/* List Item Realignment */
+.roadmap-list-item, li {
   color: var(--text-muted) !important;
 }
