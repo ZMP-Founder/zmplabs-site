@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact ZMPLabs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .contact-header-white { color: #ffffff !important; font-weight: 600 !important; }
+        .social-link-item { color: #0dcaf0 !important; text-decoration: none; transition: color 0.2s ease; }
+        .social-link-item:hover { color: #ffffff !important; }
+    </style>
 </head>
 <body>
-    <!-- HEADER BAR -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-white fs-4" href="index.html">ZMPLabs</a>
@@ -27,33 +32,46 @@
         </div>
     </nav>
 
-    <!-- CONTENT FIELDS[cite: 3] -->
     <main class="container py-5">
         <div class="text-center mb-5">
-            <h1 class="fw-bold text-white">Contact ZMPLabs</h1> <!--[cite: 3] -->
-            <p class="lead">We’d love to hear from you.</p> <!--[cite: 3] -->
+            <h1 class="fw-bold text-white">Contact ZMPLabs</h1>
+            <p class="lead">We’d love to hear from you.</p>
         </div>
         
         <div class="row g-4">
-            <div class="col-lg-7">
-                <div class="contact-box">
-                    <h2 class="h5 text-white mb-4">General Inquiry</h2> <!--[cite: 3] -->
-                    <input type="text" placeholder="Your name" class="form-control mb-3"> <!--[cite: 3] -->
-                    <input type="email" placeholder="Your email" class="form-control mb-3"> <!--[cite: 3] -->
-                    <textarea placeholder="Your message" class="form-control mb-3" rows="4"></textarea> <!--[cite: 3] -->
-                    <button class="btn btn-outline-info w-100 py-3 text-uppercase fw-bold">Send Message</button> <!--[cite: 3] -->
+            <div class="col-lg-6">
+                <div class="contact-box h-100">
+                    <h2 class="h5 text-white mb-4">General Inquiry</h2>
+                    <input type="text" placeholder="Your name" class="form-control mb-3">
+                    <input type="email" placeholder="Your email" class="form-control mb-3">
+                    <textarea placeholder="Your message" class="form-control mb-3" rows="4"></textarea>
+                    <button class="btn btn-outline-info w-100 py-3 text-uppercase fw-bold">Send Message</button>
                 </div>
             </div>
             
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <div class="contact-box h-100 d-flex flex-column justify-content-center p-4">
-                    <div class="mb-4">
-                        <h3 class="h5 text-white mb-2">Sponsor Inquiry</h3> <!--[cite: 3] -->
-                        <p class="fs-5 text-info mb-0">Email: supportteam@zmplabs.com</p> <!--[cite: 3] -->
+                    <div class="mb-4 pb-2">
+                        <h3 class="h5 contact-header-white mb-2"><i class="bi bi-envelope-at me-2 text-info"></i>Sponsor Inquiry</h3>
+                        <p class="fs-5 text-info mb-0">supportteam@zmplabs.com</p>
                     </div>
+                    
                     <div>
-                        <h3 class="h5 text-white mb-2">Social</h3> <!--[cite: 3] -->
-                        <p class="fs-5 text-white mb-0">LinkedIn: @zmplabs</p> <!--[cite: 3] -->
+                        <h3 class="h5 contact-header-white mb-3"><i class="bi bi-share me-2 text-info"></i>Connect With Us</h3>
+                        <ul class="list-unstyled fs-5 lh-lg">
+                            <li class="mb-2">
+                                <i class="bi bi-newspaper me-2 text-secondary"></i>
+                                <a href="https://substack.com/@zmplabs" target="_blank" class="social-link-item">Substack: @zmplabs</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-facebook me-2 text-secondary"></i>
+                                <a href="https://www.facebook.com/profile.php?id=61570726530489" target="_blank" class="social-link-item">Facebook: ZMPLabs</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-linkedin me-2 text-secondary"></i>
+                                <a href="https://linkedin.com" target="_blank" class="social-link-item">LinkedIn: @zmplabs</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
